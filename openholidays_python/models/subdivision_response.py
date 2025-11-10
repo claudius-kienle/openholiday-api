@@ -32,7 +32,7 @@ class SubdivisionResponse(BaseModel):
     category: List[LocalizedText] = Field(description="Localized categories of the subdivision")
     children: Optional[List[SubdivisionResponse]] = Field(default=None, description="Child subdivisions")
     code: Annotated[str, Field(min_length=1, strict=True)] = Field(description="Subdivision code")
-    comment: List[LocalizedText] = Field(description="Localized comments of the subdivision")
+    comment: Optional[List[LocalizedText]] = Field(description="Localized comments of the subdivision")
     groups: Optional[List[GroupReference]] = Field(default=None, description="List of group references")
     iso_code: Optional[StrictStr] = Field(default=None, description="ISO 3166-2 subdivision code (if defined)", alias="isoCode")
     name: List[LocalizedText] = Field(description="Localized names of the subdivision")

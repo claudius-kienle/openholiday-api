@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.subdivision_reference import SubdivisionReference
+from openholidays_python.models.subdivision_reference import SubdivisionReference
 
 # TODO update the JSON string below
 json = "{}"

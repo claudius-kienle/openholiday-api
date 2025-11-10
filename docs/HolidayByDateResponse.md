@@ -21,7 +21,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.holiday_by_date_response import HolidayByDateResponse
+from openholidays_python.models.holiday_by_date_response import HolidayByDateResponse
 
 # TODO update the JSON string below
 json = "{}"

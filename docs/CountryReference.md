@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.country_reference import CountryReference
+from openholidays_python.models.country_reference import CountryReference
 
 # TODO update the JSON string below
 json = "{}"

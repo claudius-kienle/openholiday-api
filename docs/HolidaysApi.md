@@ -1,4 +1,4 @@
-# openapi_client.HolidaysApi
+# openholidays_python.HolidaysApi
 
 All URIs are relative to *http://localhost*
 
@@ -19,22 +19,22 @@ Returns a list of public holidays from all countries for a given date.
 
 
 ```python
-import openapi_client
-from openapi_client.models.holiday_by_date_response import HolidayByDateResponse
-from openapi_client.rest import ApiException
+import openholidays_python
+from openholidays_python.models.holiday_by_date_response import HolidayByDateResponse
+from openholidays_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = openholidays_python.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with openholidays_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.HolidaysApi(api_client)
+    api_instance = openholidays_python.HolidaysApi(api_client)
     var_date = '2023-12-25' # date | Date of interest
     language_iso_code = 'DE' # str | ISO-639-1 code of a language or empty (optional)
 
@@ -89,22 +89,22 @@ Returns list of public holidays for a given country
 
 
 ```python
-import openapi_client
-from openapi_client.models.holiday_response import HolidayResponse
-from openapi_client.rest import ApiException
+import openholidays_python
+from openholidays_python.models.holiday_response import HolidayResponse
+from openholidays_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = openholidays_python.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with openholidays_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.HolidaysApi(api_client)
+    api_instance = openholidays_python.HolidaysApi(api_client)
     country_iso_code = 'DE' # str | ISO 3166-1 code of the country
     valid_from = '2023-01-01' # date | Start of the date range
     valid_to = '2023-12-31' # date | End of the date range
@@ -165,22 +165,22 @@ Returns a list of school holidays from all countries for a given date.
 
 
 ```python
-import openapi_client
-from openapi_client.models.holiday_by_date_response import HolidayByDateResponse
-from openapi_client.rest import ApiException
+import openholidays_python
+from openholidays_python.models.holiday_by_date_response import HolidayByDateResponse
+from openholidays_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = openholidays_python.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with openholidays_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.HolidaysApi(api_client)
+    api_instance = openholidays_python.HolidaysApi(api_client)
     var_date = '2023-12-25' # date | Date of interest
     language_iso_code = 'DE' # str | ISO-639-1 code of a language or empty (optional)
 
@@ -235,22 +235,22 @@ Returns list of official school holidays for a given country
 
 
 ```python
-import openapi_client
-from openapi_client.models.holiday_response import HolidayResponse
-from openapi_client.rest import ApiException
+import openholidays_python
+from openholidays_python.models.holiday_response import HolidayResponse
+from openholidays_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = openholidays_python.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with openholidays_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.HolidaysApi(api_client)
+    api_instance = openholidays_python.HolidaysApi(api_client)
     country_iso_code = 'DE' # str | ISO 3166-1 code of the country
     valid_from = '2023-01-01' # date | Start of the date range
     valid_to = '2023-12-31' # date | End of the date range

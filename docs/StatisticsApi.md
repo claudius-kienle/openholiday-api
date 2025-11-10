@@ -1,4 +1,4 @@
-# openapi_client.StatisticsApi
+# openholidays_python.StatisticsApi
 
 All URIs are relative to *http://localhost*
 
@@ -17,22 +17,22 @@ Returns statistical data about public holidays for a given country.
 
 
 ```python
-import openapi_client
-from openapi_client.models.statistics_response import StatisticsResponse
-from openapi_client.rest import ApiException
+import openholidays_python
+from openholidays_python.models.statistics_response import StatisticsResponse
+from openholidays_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = openholidays_python.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with openholidays_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.StatisticsApi(api_client)
+    api_instance = openholidays_python.StatisticsApi(api_client)
     country_iso_code = 'DE' # str | ISO 3166-1 code of the country
     subdivision_code = 'DE-BE' # str | Code of the subdivision or empty (optional)
 
@@ -87,22 +87,22 @@ Returns statistical data about school holidays for a given country
 
 
 ```python
-import openapi_client
-from openapi_client.models.statistics_response import StatisticsResponse
-from openapi_client.rest import ApiException
+import openholidays_python
+from openholidays_python.models.statistics_response import StatisticsResponse
+from openholidays_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = openholidays_python.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with openholidays_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.StatisticsApi(api_client)
+    api_instance = openholidays_python.StatisticsApi(api_client)
     country_iso_code = 'DE' # str | ISO 3166-1 code of the country
     subdivision_code = 'DE-BE' # str | Code of the subdivision or empty (optional)
     group_code = 'group_code_example' # str | Code of the holiday group or empty (optional)

@@ -1,4 +1,4 @@
-# openapi_client.RegionalApi
+# openholidays_python.RegionalApi
 
 All URIs are relative to *http://localhost*
 
@@ -19,22 +19,22 @@ Returns a list of all supported countries
 
 
 ```python
-import openapi_client
-from openapi_client.models.country_response import CountryResponse
-from openapi_client.rest import ApiException
+import openholidays_python
+from openholidays_python.models.country_response import CountryResponse
+from openholidays_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = openholidays_python.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with openholidays_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.RegionalApi(api_client)
+    api_instance = openholidays_python.RegionalApi(api_client)
     language_iso_code = 'DE' # str | ISO-639-1 code of a language or empty (optional)
 
     try:
@@ -87,22 +87,22 @@ Returns a list of relevant holiday groups for a supported country (if any)
 
 
 ```python
-import openapi_client
-from openapi_client.models.group_response import GroupResponse
-from openapi_client.rest import ApiException
+import openholidays_python
+from openholidays_python.models.group_response import GroupResponse
+from openholidays_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = openholidays_python.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with openholidays_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.RegionalApi(api_client)
+    api_instance = openholidays_python.RegionalApi(api_client)
     country_iso_code = 'DE' # str | ISO 3166-1 code of the country
     language_iso_code = 'de' # str | ISO-639-1 code of a language or empty (optional)
     subdivision_code = 'subdivision_code_example' # str | Code of a subdivision or empty (optional)
@@ -159,22 +159,22 @@ Returns a list of all used languages
 
 
 ```python
-import openapi_client
-from openapi_client.models.language_response import LanguageResponse
-from openapi_client.rest import ApiException
+import openholidays_python
+from openholidays_python.models.language_response import LanguageResponse
+from openholidays_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = openholidays_python.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with openholidays_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.RegionalApi(api_client)
+    api_instance = openholidays_python.RegionalApi(api_client)
     language_iso_code = 'DE' # str | ISO-639-1 code of a language or empty (optional)
 
     try:
@@ -227,22 +227,22 @@ Returns a list of relevant subdivisions for a supported country (if any)
 
 
 ```python
-import openapi_client
-from openapi_client.models.subdivision_response import SubdivisionResponse
-from openapi_client.rest import ApiException
+import openholidays_python
+from openholidays_python.models.subdivision_response import SubdivisionResponse
+from openholidays_python.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to http://localhost
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = openholidays_python.Configuration(
     host = "http://localhost"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with openholidays_python.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.RegionalApi(api_client)
+    api_instance = openholidays_python.RegionalApi(api_client)
     country_iso_code = 'DE' # str | ISO 3166-1 code of the country
     language_iso_code = 'DE' # str | ISO-639-1 code of a language or empty (optional)
 

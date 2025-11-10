@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.group_reference import GroupReference
+from openholidays_python.models.group_reference import GroupReference
 
 # TODO update the JSON string below
 json = "{}"

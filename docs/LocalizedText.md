@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.localized_text import LocalizedText
+from openholidays_python.models.localized_text import LocalizedText
 
 # TODO update the JSON string below
 json = "{}"

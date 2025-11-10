@@ -19,7 +19,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.subdivision_response import SubdivisionResponse
+from openholidays_python.models.subdivision_response import SubdivisionResponse
 
 # TODO update the JSON string below
 json = "{}"

@@ -153,7 +153,7 @@ class HolidayByDateResponse(BaseModel):
             "nationwide": obj.get("nationwide"),
             "regionalScope": obj.get("regionalScope"),
             "subdivisions": [SubdivisionReference.from_dict(_item) for _item in obj["subdivisions"]] if obj.get("subdivisions") is not None else None,
-            "tags": obj.get("tags"),
+            "tags": obj.get("tags") if not isinstance(obj.get('tags', 0), int) else None,
             "temporalScope": obj.get("temporalScope"),
             "type": obj.get("type")
         })

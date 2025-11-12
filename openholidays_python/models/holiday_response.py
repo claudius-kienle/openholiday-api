@@ -152,7 +152,7 @@ class HolidayResponse(BaseModel):
             "startDate": obj.get("startDate"),
             "subdivisions": [SubdivisionReference.from_dict(_item) for _item in obj["subdivisions"]] if obj.get("subdivisions") is not None else None,
             "groups": [GroupReference.from_dict(_item) for _item in obj["groups"]] if obj.get("groups") is not None else None,
-            "tags": obj.get("tags"),
+            "tags": obj.get("tags") if not isinstance(obj.get("tags"), int) else None,
             "temporalScope": obj.get("temporalScope"),
             "type": obj.get("type")
         })
